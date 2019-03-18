@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #505962;
+}
+
+/* ============ NAVIGATION============  */
+
+.navbar {
+  padding: 0.7rem 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  transition: background-color 0.5s ease 0s;
+}
+.navbar.solid {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+  transition: background-color 1s ease 0s;
+}
+.navbar-brand img {
+  height: 2rem;
+}
+
+.svg-inline--fa.fa-w-14 {
+  color: white;
+  font-size: 1.6rem;
+}
+.navbar-nav li {
+  padding-right: 0.8rem;
+}
+.navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+  color: #1ebba3;
+}
+
+
+/* ============ HOME PAGE============  */
+.homebg {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Change height of homepage image. */
+  display: table;
+  z-index: -1;
+}
+
+.dark {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  height: 100%;
+  z-index: 1000 !important;
+}
+.homebg-inner {
+  background-image: url("img/bg.jpeg");
+  position: fixed; 
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.homebg-inner-forms {
+    background-image: url("img/bg_login.jpeg");
+    position: fixed;
+    display: table;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
+.search {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+}
+.searchForm {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.search h1 {
+  color: white;
+  font-size: 4.2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+.search h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-shadow: 0.1rem 0.1rem 0.4rem black;
+  padding-bottom: 2rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block !important;
+}
+/* ============ ITEM SECTION ============  */
+.filter {
+  background-color: #e9ecef;
+  padding: 1rem;
+  box-shadow: 0.1rem 0.2rem 1rem rgba(0, 0, 0, 0.25);
+  /* text-align: center; */
+}
+.filter h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 4rem;
+}
+.filter h4:hover {
+  color: #1ebba3;
+}
+.jumbotron {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.narrow {
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.narrow-login {
+  width: 30%;
+  margin: 0 auto;
+}
+.card {
+  padding: 0;
+  margin: 0.3rem;
+  border-top: 0.2rem solid #1ebba3;
+  transition: transform 0.5s ease;
+}
+.card:hover {
+  box-shadow: rgba(0, 0, 0, 0.25);
+  transform: scale(1.02);
+}
+
+.forms {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 20%;
+  margin: 0 auto;
+}
+.forms h3 {
+  color: white;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  margin-top: 5rem;
+}
+.forms h4 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.forms a {
+  text-decoration: none;
+}
+.forms a h4:hover {
+  color: #1ebba3;
+}
+
+.btn-sm {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.btn-turquoise {
+  border-color: #1ebba3;
+  background-color: #1ebba3;
+  color: white;
+}
+.btn-turquoise:hover,
+.btn-turquoise:focus {
+  border-color: #189582;
+  background-color: #189582;
+  color: white;
+}
